@@ -6,6 +6,7 @@ Grundläggande funktionalitet för CRUD (Create, Read, Update, Delete) är imple
 APIet använder en Mongodb-databas.
 Klona ner källkodsfilerna, kör kommando npm install för att installera nödvändiga npm-paket.  
 databasdokumentet använder ett schema som ser ut som följande:
+```
 const WorkExperienceSchema = new mongoose.Schema({
     companyname: {
         type: String,
@@ -32,6 +33,7 @@ const WorkExperienceSchema = new mongoose.Schema({
         required: [true, "Du måste skicka med en beskrivning på dina arbetssysslor"],
     },
 });
+```
 
 ## URL till databasen
 
